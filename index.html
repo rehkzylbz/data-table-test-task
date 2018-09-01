@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>JSON Table</title>
+    
+    <style>
+        #data-table td {
+            vertical-align: middle;
+        }
+        #data-table td:nth-child(1) {
+            padding-left: 1rem;
+        }
+        #data-table .btn-success {
+            transform: rotate(-90deg);
+        }
+        #data-table .btn-primary {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="btn btn-primary m-3" onclick="get_data()">Get data</button>
+    <div class="container-fluid">
+        <table class="table table-hover align-middle" id="data-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Children</th>
+                    <th scope="col"><input class="form-check-input" id="active-checker" type="checkbox" onclick="filter_active()"> isActive</th>
+                    <th scope="col">Balance</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="js/front.min.js"></script>
+    
+</body>
+</html>
